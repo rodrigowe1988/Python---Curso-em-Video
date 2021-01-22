@@ -1,0 +1,541 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNuD1BgdaeyjIXruZhySdBb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rodrigowe1988/Python---Curso-em-Video/blob/main/Primeira%20lista%20de%20Exerc%C3%ADcios\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Z5ZJT5jOMk8R"
+      },
+      "source": [
+        "#crie um algoritmo que leia um número inteiro e mostre na tela o número antecessor e o sucessor dele\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JKQ9bX7RuPvn",
+        "outputId": "617462b7-4fc2-4daf-a835-3f41902add19"
+      },
+      "source": [
+        "n1 = int(input('Digite um número inteiro: '))\r\n",
+        "print(f'O número {n1} tem como antecessor {n1 - 1} e sucessor {n1 + 1}')"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um número inteiro: 15\n",
+            "O número 15 tem como antecessor 14 e sucessor 16\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uOprP8B8M43H"
+      },
+      "source": [
+        "#crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pN9L93Y21Rn4",
+        "outputId": "6c3f7d56-ec56-4371-bc6b-58b6cbcf62d0"
+      },
+      "source": [
+        "n2 = float(input('Digite um número: '))\r\n",
+        "print(f'Para o número {n2:.2f} temos como dobro {n2 * 2:.2f}, como triplo {n2 * 3:.2f} como raiz quadrada {n2**(1/2):.2f}.')\r\n"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um número: 25\n",
+            "Para o número 25.00 temos como dobro 50.00, como triplo 75.00 como raiz quadrada 5.0.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vo-JHdVwNlnb"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "iL8EzWpvN2hE"
+      },
+      "source": [
+        "#desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a média delas\r\n",
+        "\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tPLHYQJRN4MK",
+        "outputId": "3d6ed88c-f9e0-4713-88c5-7aa0aba228ce"
+      },
+      "source": [
+        "nota1 = float(input('Digite a primeira nota: '))\r\n",
+        "nota2 = float(input('Digite a segunda nota: '))\r\n",
+        "print('A média das duas notas é {}.'.format((nota1 + nota2) / 2))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a primeira nota: 10\n",
+            "Digite a segunda nota: 8.5\n",
+            "A média das duas notas é 9.25.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "swiG1yiIObX5"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wTpZWch7Om4R"
+      },
+      "source": [
+        "#escreva um programa que leia um valor em metros e o exiba convertido em centimetros e milímetros\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2iK5NoCFOrLB",
+        "outputId": "dca1c9ac-5cf3-4803-e0cf-8b1a396881d2"
+      },
+      "source": [
+        "n3 = float(input('Digite a quantidade de metros que gostaria de converter: '))\r\n",
+        "print(f'{n3}m equivale a {n3 * 100:.2f}cm ou {n3 * 1000:.2f}mm.')"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a quantidade de metros que gostaria de converter: 1.5\n",
+            "1.5m equivale a 150.00cm ou 1500.00mm.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "00mBD7hsPKYx"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yg500qbfPyh1"
+      },
+      "source": [
+        "#faça um programa que leia um número inteiro qualquer e mostre na tela a tabuada dele\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BT33AzlrPzqn",
+        "outputId": "60f35f35-eacd-46bc-d484-42c25eff01f4"
+      },
+      "source": [
+        "n4 = int(input('Digite um número inteiro para ver a tabuada: '))\r\n",
+        "for c in range(1, 11):\r\n",
+        "  print(f'{n4} x {c} = {n4 * c}')"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite um número inteiro para ver a tabuada: 5\n",
+            "5 x 1 = 5\n",
+            "5 x 2 = 10\n",
+            "5 x 3 = 15\n",
+            "5 x 4 = 20\n",
+            "5 x 5 = 25\n",
+            "5 x 6 = 30\n",
+            "5 x 7 = 35\n",
+            "5 x 8 = 40\n",
+            "5 x 9 = 45\n",
+            "5 x 10 = 50\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UagcPHW4RAbh"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "m6iekoxARgDw"
+      },
+      "source": [
+        "#crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar(dolar $5.49)\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SDhrOzp8Rj5O",
+        "outputId": "013b58e4-129f-4fce-ff7e-831ea376ef77"
+      },
+      "source": [
+        "n5 = float(input('Quanto de dinheiro você possui em sua carteira: '))\r\n",
+        "print(f'Você possui em sua carteira ${n5 / 5.49:.2f}. ')"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Quanto de dinheiro você possui em sua carteira: 100\n",
+            "Você possui em sua carteira $18.21. \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qlpnr9WMSxph"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LtDKIz6LTVIo"
+      },
+      "source": [
+        "#Crie um programa que leia a largura e a altura de uma parede (em metros). Calcule a área dela e a qtd de tinta necessária para pintá-la, sabendo que cada litro de tinta pinta uma área de 2m²\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ThWY9oPaTV-F",
+        "outputId": "39234b84-7d88-48a3-ea7f-291ee7b9047a"
+      },
+      "source": [
+        "width = float(input('Digite a largura da parede: '))\r\n",
+        "heigth = float(input('Digite a altura da parede: '))\r\n",
+        "area = width * heigth\r\n",
+        "print(f'A área da parede é de {area:.2f}m² e serão necessários {area / 2:.2f} litros para pintá-la')"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a largura da parede: 10\n",
+            "Digite a altura da parede: 10\n",
+            "A área da parede é de 100.0 e serão necessários 50.0 litros para pintá-la\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "EaGzNZq2XJCC"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JqKJcl73X2V8"
+      },
+      "source": [
+        "#Faça um algoritmo que leia o preco de um produto e mostre seu novo preço, com 5% de desconto\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7q5wuyamX3TN",
+        "outputId": "118d920c-c1d0-4ab5-a95e-2467152787c5"
+      },
+      "source": [
+        "n6 = float(input('Digite o preço do produto que deseja: '))\r\n",
+        "print(f'O preço do produto ficou por R${n6 - (n6 * 0.05):.2f}.')"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o preço do produto que deseja: 100\n",
+            "O preço do produto ficou por R$95.00.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "DY5JIHrjZMLD"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "HJScvGrtZRWF"
+      },
+      "source": [
+        "#Crie um algoritmo que leia o salário de um funcionário e mostre o novo salário(com 15% de aumento)\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4-TvChv2ZSEs",
+        "outputId": "500aca47-4a2d-4f07-c73a-b6caa1f92e13"
+      },
+      "source": [
+        "n7 = float(input('Digite o salário do funcionário: '))\r\n",
+        "print('O novo salário do funcionário é de R${:.2f}.'.format(n7 + (n7 * 0.15)))"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite o salário do funcionário: 1000\n",
+            "O novo salário do funcionário é de R$1150.00.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wTB8GdzyZvrP"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ezKM-pPZZ0cg"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7PMZXv1UZ03W"
+      },
+      "source": [
+        "#Crie um algoritmo que converta a temperatura de Celsius para Fahrenheit\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3-8oCECdaqNi",
+        "outputId": "c3e620ef-c6ec-446b-855e-b36cd647dd84"
+      },
+      "source": [
+        "celsius = float(input('Digite a temperatura em Celsius: '))\r\n",
+        "print(f'Convertendo a temperatura {celsius} em Fahrenheit fica {celsius * 1.8 + 32}ºF.')"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a temperatura em Celsius: 100\n",
+            "Convertendo a temperatura 100.0 em Fahrenheit fica 212.0ºF.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5FPmojXZbpRg"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yOYEjLE7b0Nu"
+      },
+      "source": [
+        "#pergunte a qtd de km percorridos por um carro alugado e a qtd de dias. Calcule o preço a pagar, sabendo que o carro custa $60/ dia e $0.15/km rodado\r\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7nMG22zxcGqk",
+        "outputId": "3fb7b68a-c0a2-4415-cc84-5192262ea17a"
+      },
+      "source": [
+        "km_perc = float(input('Digite a quantidade de km percorridos: '))\r\n",
+        "dias = int(input('Digite a quantidade de dias alugados: [somente valores inteiros] '))\r\n",
+        "print('O preço a se pagar pelo aluguel do veículo é de R${:.2f}.'.format((dias*60) + (km_perc * 0.15)))"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite a quantidade de km percorridos: 1000\n",
+            "Digite a quantidade de dias alugados: [somente valores inteiros] 10\n",
+            "O preço a se pagar pelo aluguel do veículo é de 750.00.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ea2t8WWhc4Yu"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
